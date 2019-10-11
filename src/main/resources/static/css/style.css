@@ -1,0 +1,37 @@
+select, input, #submit-button button, #reset-button button {
+    width: 100%;
+}
+
+.request-fields, #api-div {
+    margin: 10px 0;
+}
+
+#submit-button, #reset-button {
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    position: relative;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 10px 10px;
+    transform: translate(0%, -50%);
+}

@@ -1,0 +1,14 @@
+Changelist:
+
+## [1.0.1] - 2019-04-10
+### Added
+-Rebalancing endpoint for category type portfolios
+-Endpoint to retrieve portfolio holdings by category for display
+-CategoryRecommendation object to hold transactions that balance a single category
+-FundInfo object to store unit price and other info from mock system
+-UI changes to handle type category portfolios
+
+### Changed
+-Create portfolio endpoint to allow the creation of type category portfolios
+-Update allocation to handle type category portfolios
+-Unit and integration tests to handle type category portfolios

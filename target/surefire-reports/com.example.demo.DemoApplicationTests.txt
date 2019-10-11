@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.DemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 20.559 s <<< FAILURE! - in com.example.demo.DemoApplicationTests
+deviationPUTResponse(com.example.demo.DemoApplicationTests)  Time elapsed: 1.325 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2]00> but was:<[4]00>
+	at com.example.demo.DemoApplicationTests.deviationPUTResponse(DemoApplicationTests.java:88)
+
+homeResponse(com.example.demo.DemoApplicationTests)  Time elapsed: 0.037 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<"[Spring is here]!"> but was:<"[Welcome to Rebalance Fund Service System - Team REST]!">
+	at com.example.demo.DemoApplicationTests.homeResponse(DemoApplicationTests.java:36)
+
+GETPortfolioResponse(com.example.demo.DemoApplicationTests)  Time elapsed: 0.023 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...id":"1","deviation":["5","type":"fund","allocations":{"25":70,"70":30}]}"> but was:<...id":"1","deviation":[null,"type":null,"allocations":null]}">
+	at com.example.demo.DemoApplicationTests.GETPortfolioResponse(DemoApplicationTests.java:42)
+
+POSTportofolioResponse(com.example.demo.DemoApplicationTests)  Time elapsed: 0.072 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2]00> but was:<[4]00>
+	at com.example.demo.DemoApplicationTests.POSTportofolioResponse(DemoApplicationTests.java:70)
+

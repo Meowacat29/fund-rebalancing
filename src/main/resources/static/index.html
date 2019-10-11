@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>HSBC Rebalancing Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="col-sm-12" id="title-div">
+    <h1>HSBC Rebalancing Project</h1>
+</div>
+<div class="col-sm-6 col-md-6 col-lg-6" id="input-div">
+    <div class="col-sm-7 col-md-7 col-lg-7" id="api-div">
+        <select name="apiSelect" id="api-select">
+            <option>Select a Service</option>
+            <option value="portfolio-post">Create Initial Preference</option>
+            <option value="portfolio-get">Get My Portfolio</option>
+        </select>
+    </div>
+    <form id="form">
+        <div class="request-fields col-sm-12 col-md-12 col-lg-12 " id="id-div" style="display: none">
+            <div class="col-sm-3 col-md-3 col-lg-3" id="id-label">
+                ID
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4" id="id-input">
+                <input type="text" name="idInput">
+            </div>
+        </div>
+        <div class="request-fields col-sm-12 col-md-12 col-lg-12 " id="deviation-div" style="display: none">
+            <div class="col-sm-3 col-md-3 col-lg-3" id="deviation-label">
+                Deviation
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4" id="deviation-input">
+                <input type="text" name="deviationInput">
+            </div>
+        </div>
+        <div class="request-fields col-sm-12 col-md-12 col-lg-12" id="type-div" style="display: none">
+            <div class="col-sm-3 col-md-3 col-lg-3" id="type-label">
+                Type
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4" id="type-select">
+                <select name="typeSelect">
+                    <option />
+                    <option value="fund">Fund</option>
+                    <option value="category">Category</option>
+                </select>
+            </div>
+        </div>
+        <div class="request-fields col-sm-12 col-md-12 col-lg-12" id="allocation-div" style="display: none">
+            <div class="col-sm-3 col-md-3 col-lg-3" id="allocation-label">
+                Allocations
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4" id="allocation-select">
+                <select name="allocationSelect">
+                    <option />
+                    <option value="1">Fund 1</option>
+                    <option value="2">Fund 2</option>
+                    <option value="3">Fund 3</option>
+                </select>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2" id="percentage-input">
+                <input type="text" name="percentageInput" style="width: 75%; float:left;">
+                <span style="float:right">%</span>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2" id="add-button">
+                <button type="button" name="addAllocationBtn">Add</button>
+            </div>
+            <div class="col-sm-offset-3 col-sm-4" id="allocation-list">
+                <ul/>
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-7 col-lg-7" id="submit-button">
+            <button type="button" name="submitBtn">Submit</button>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3" id="reset-button">
+            <button type="button" name="resetBtn">Reset</button>
+        </div>
+    </form>
+</div>
+<div class="col-sm-6 col-md-6 col-lg-6" id="output-div">
+    <div class="col-sm-offset-2 col-sm-10" id="textbox-div">
+        Response:
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../fonts/CircularStd-Book.eot');
+  src: url('../fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CircularStd-Book.otf') format('opentype'),
+  url('../fonts/CircularStd-Book.woff') format('woff'),
+  url('../fonts/CircularStd-Book.ttf') format('truetype'),
+  url('../fonts/CircularStd-Book.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  src: url('../fonts/AvenirNextLTPro-Regular.eot');
+  src: url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirNextLTPro-Regular.otf') format('opentype'),
+  url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+  url('../fonts/AvenirNextLTPro-Regular.ttf') format('truetype'),
+  url('../fonts/AvenirNextLTPro-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FontAwesome.otf') format('opentype'),
+  url('../fonts/fontawesome-webfont.woff') format('woff'),
+  url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+  url('../fonts/fontawesome-webfont.svg') format('svg');
+}
+
+$red: #e60d0d;
+$crimson: #d21037;
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 18px 'CircularStd', 'Helvetica';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.error {
+  color: $red;
+}
+
+.form-input-error {
+  @extend .error;
+
+  margin-top: 8px;
+}
+
+.form-submission-error {
+  @extend .error;
+
+  padding: 3px 15px 15px 15px;
+}
+
+.flex-same-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  border: 2px solid #ededed;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.header-content{
+  display: block;
+  padding: 16px 0;
+  border-bottom: 4px solid #db0011; // db0011, EF241C
+}
+
+.header-logo img{
+  height: 28px;
+  display: block;
+  margin: 0 auto 0 40px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-header {
+  margin-bottom: 1.5rem;
+}
+
+.fa-back-btn {
+  font-size: 35px;
+}
+
+.popup-content {
+  max-height: 30rem;
+  overflow-y: scroll;
+  border-radius: 0.3rem;
+
+  label {
+    display: block;
+    text-align: left;
+  }
+}
+
+.pie-chart-wrapper {
+  padding: 20px;
+}
+
+.pie-chart-label {
+  text-decoration: underline;
+}
+
+.inline-buttons-wrapper {
+  .btn {
+    margin: 20px;
+  }
+
+  .back-btn{
+    margin-right:400px;
+  }
+}
+
+.modal-footer .btn {
+  margin: 5px;
+}
+
+.main-form-wrapper {
+  min-height: 120px;
+}
+
+.region {
+  border: .2rem solid #ececec;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  transform: translate(-50%, -50%); /* IE 10, Fx 16+, Op 12.1+ */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.back-cancel-btn{
+  background-color: #EDEDED !important;
+  color: black!important;
+  border-style: none;
+
+  // back button: make links look white and normal font
+  i {
+    color: black!important;
+    font-style: normal !important;
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+}
+.red-btn {
+  background-color: #db0011; //EF241C
+  color: #fff!important;
+  border-style: none;
+}
+
+// customer portfolios
+.list-group-item{
+  a {
+    color: #4E6472 !important; // dark: 4E6472 red: db0011
+    font-style: normal !important;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+
+}
+
+// input box focus color from blue to grey
+.form-control:focus{
+  outline: none !important;
+  border:1px solid #bdbdbd;
+  box-shadow: 0 0 10px #d9d9d9 !important;
+}
+
+button:focus{
+  outline: none !important;
+  border:1px solid #bdbdbd;
+  box-shadow: 0 0 10px #d9d9d9 !important;
+}
+
+.table{
+  text-align: left;
+}
+
+#table-sort{
+  text-align: right;
+}
+
+.greeting{
+  position: absolute;
+  right: 100px;
+  top: 19px;
+  font: 16px 'CircularStd', 'Helvetica';
+}
+
+.photo{
+  position: absolute;
+  right: 40px;
+  top: 7px;
+  width: 42px;
+  height: 42px;
+}
+
+.error-message {
+  background-color: #ff7272;
+  color: white;
+  padding: 1em;
+}
